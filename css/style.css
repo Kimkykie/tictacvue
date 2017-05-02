@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Inconsolata|Shadows+Into+Light');
+html,body{
+  background-color: #da3e52;
+}
+.wrapper {
+  display:flex;
+  border:3px solid white;
+  border-radius: 5px;
+  height:50vh;
+  width: 50vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.col{
+  width:33.333%;
+  height: 33.333%;
+  border: 3px solid white;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chooseTurn{
+  text-align: center;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.content .title{
+  font-family: 'Inconsolata', monospace;
+  font-size: 3em;
+  color: white;
+  font-weight: 400;
+}
+
+.button{
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-width: medium;
+}
+
+.playingMode{
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.win {
+  color: #23c9ff;
+  transition: 200ms;
+}
+
+.reload{
+  display: none;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.reload .title{
+    font-family: 'Inconsolata', monospace;
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: white;
+}
+

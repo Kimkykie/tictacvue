@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <body>
+        <div id="main">
+            <div class="content">
+                <div class="chooseTurn" v-if="!gameisRunning">
+                    <h1 class="title">Choose Turn</h1>
+                    <div class="block">
+                        <a class="button" id="xturn" @click="chooseTurn">X</a>
+                        <a class="button" id="oturn" @click="chooseTurn">O</a>
+                    </div>
+                </div>
+
+                <div class="playingMode" v-if="gameisRunning">
+                    <h1 class="title">GAME IS ON</h1>
+                </div>
+                <div class="wrapper">
+                    <div class="col" id="1" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="2" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="3" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="4" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="5" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="6" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="7" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="8" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                    <div class="col" id="9" v-on:click.once="seticon($event.currentTarget.id)"></div>
+                </div>
+            </div>
+            <div class="reload">
+                <h1 class="title">RELOAD GAME</h1>
+                <button class="button" @click="reload">REPLAY</button>
+            </div>
+        </div>
+
+
+
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/program.js"></script>
+    </body>
+
+</html>
